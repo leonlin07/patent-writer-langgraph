@@ -1,0 +1,29 @@
+# ===== LangGraph 编排层 =====
+langgraph>=1.2.0
+langgraph-checkpoint-sqlite>=3.0.0
+
+# ===== 核心依赖（LLM / 解析 / 文档）=====
+openai>=1.0.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+pydantic>=2.0.0
+markdown>=3.5.0
+python-docx>=0.8.11
+PyPDF2>=3.0.0
+beautifulsoup4>=4.12.0
+aiohttp>=3.9.0
+typing-extensions>=4.8.0
+
+# ===== 服务化部署（HTTP 服务）=====
+fastapi>=0.110.0
+uvicorn>=0.29.0
+
+# ===== 可选依赖（按需安装）=====
+# anthropic：仅当 DEFAULT_LLM_PROVIDER=anthropic 时才需要（默认 siliconflow 不需要）
+#   pip install "anthropic>=0.18.0" -i https://mirrors.aliyun.com/pypi/simple/
+#
+# matplotlib：仅 scripts/ 下的附图绘制脚本需要
+#   pip install "matplotlib>=3.7.0"
+#
+# gradio：交互式 Web 前端（serve/ui.py）需要
+#   pip install "gradio>=4.0.0"

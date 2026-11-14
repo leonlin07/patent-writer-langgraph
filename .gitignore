@@ -1,0 +1,36 @@
+# 密钥与本地环境（严禁提交）
+.env
+
+# 真实交底书（脱敏：私有数据，严禁提交）
+private_data/
+
+# 个人求职材料 + 真实专利交付脚本（含真实申请号/姓名/单位，严禁提交）
+doc/
+scripts/
+
+# 评测报告（引用私有交底书文件名，严禁提交）
+eval/report.md
+eval/rag_ablation.md
+
+# Python 运行产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+
+# 运行产物与中间文件
+output/
+_tmp_media/
+*.bak*
+
+# checkpoint 落盘（断点续跑）
+*.sqlite
+*.sqlite3
+*.db
+
+# IDE / 编辑器
+.idea/
+.vscode/

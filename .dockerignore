@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.gitignore
+.env
+private_data/
+.venv/
+venv/
+output/
+jobs/
+data/*.bak*
+doc/
+scripts/
+test_graph.py
